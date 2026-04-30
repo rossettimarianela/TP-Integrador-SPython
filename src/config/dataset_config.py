@@ -1,0 +1,27 @@
+from pathlib import Path
+from src.dataset_paths import (
+    IADIZA_DIR,
+    XENO_CANTO_DIR,
+    INATURALIST_DIR,
+    PROCESSED_DIR
+)
+
+IADIZA_DIR = Path(IADIZA_DIR)
+XENO_CANTO_DIR = Path(XENO_CANTO_DIR)
+INATURALIST_DIR = Path(INATURALIST_DIR)
+PROCESSED_DIR = Path(PROCESSED_DIR)
+
+# INPUTS
+IADIZA_INPUT = IADIZA_DIR / "occurrence.txt"
+INATURALIST_INPUT = INATURALIST_DIR / "observations.csv"
+XENO_INPUT = XENO_CANTO_DIR / "occurrence.txt"
+
+# OUTPUTS
+IADIZA_OUTPUT = PROCESSED_DIR / "iadiza_output.csv"
+INATURALIST_OUTPUT = PROCESSED_DIR / "inaturalist_output.csv"
+XENO_OUTPUT = PROCESSED_DIR / "xeno_output.csv"
+
+# DELIMITERS
+IADIZA_DELIMITER = "\t"
+INATURALIST_DELIMITER = ","
+XENO_DELIMITER = ","
